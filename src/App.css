@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=La+Belle+Aurore&family=Poppins:wght@400;500;800&family=Qwitcher+Grypen:wght@700&family=Rubik:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section-lg {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+body {
+  color: #525f7f;
+  /* background-color: black; */
+}
+
+:root {
+  --white: #fff;
+  --blue: #32325d;
+  --black: #000;
+  --body: #525f7f;
+  --green: #2dce89;
+  --navy-blue: #11cdef;
+}
+
+html {
+  font-size: 95.5%;
+}
+
+@media (max-width: 1020px) {
+
+  .nav-header,
+  .header-container {
+    padding: 0 3rem 0 3rem;
+  }
+
+  .container {
+    padding: 0 3rem 0 3rem;
+  }
+
+  .education-container {
+    padding: 0 1rem 0 1rem;
+  }
+
+  .skills-wrapper {
+    flex-direction: column;
+  }
+
+  .experience-wrap {
+    flex-direction: column;
+  }
+
+  .project-wrap {
+    flex-direction: column;
+  }
+
+  .footer-details .details {
+    flex-direction: column;
+  }
+
+  .project-detail .header {
+    justify-content: center;
+  }
+
+  .experience-detail .header {
+    justify-content: center;
+  }
+
+  html {
+    font-size: 90.5%;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .nav-header,
+  .header-container {
+    padding: 0 1rem 0 1rem;
+  }
+
+  .education-container {
+    padding: 0 1rem 0 1rem;
+  }
+
+}
