@@ -15,7 +15,7 @@ const Contact = () => {
             setFail(true);
             setTimeout(() => {
                 setFail(false);
-            }, 4000);
+            },2000);
         } else {
             setName('');
             setEmail('');
@@ -24,7 +24,7 @@ const Contact = () => {
             setTimeout(() => {
                 setSuccess(false);
                 // Redirect the user here using window.location or react-router
-            }, 5000);
+            }, 4000);
         }
         // Disable the submit button for 5 seconds
         e.target.disabled = true;
@@ -41,7 +41,7 @@ const Contact = () => {
         <section className='section-bg contact-details'>
             <div className="pop-up">
                 {success && <h6>Thanks for filling out form. see you soon !</h6>}
-                {fail && <h6 style={{ background: 'red' }}>Something went wrong. Try Again !</h6>}
+                {fail && <h6 style={{ background: 'red' }}>Please fill out all fields !</h6>}
             </div>
             <div className="fill-details">
                 <h1>Want to work with me</h1>
@@ -58,7 +58,7 @@ const Contact = () => {
                         </svg>
                         <input type="Email" placeholder='Email address' value={email} onChange={(e) => setEmail(e.target.value)} /></div>
                     <div className='input'><textarea name="" id="" cols="30" rows="7" placeholder='Type a message...' value={message} onChange={(e) => setMessage(e.target.value)}></textarea></div>
-                    <button type='submit' className='submit-btn'>Submit</button>
+                    <button type='submit' className='submit-btn'>{success ? 'Sent' : 'Submit'}</button>
                 </form>
             </div>
         </section>

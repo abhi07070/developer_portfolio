@@ -30,7 +30,9 @@ const LandingPage = () => {
                             <div className="social-links">
                                 {Icons.map((icon) => (
                                     <div className="social-link social-link-animation" style={{ backgroundColor: icon.BGcolor, border: icon }}>
+                                        <a style={{color:'#fff'}} href={icon.link}>
                                         <FontAwesomeIcon icon={icon.icon} />
+                                        </a>
                                     </div>
                                 ))}
                             </div>

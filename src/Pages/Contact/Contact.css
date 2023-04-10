@@ -110,7 +110,7 @@ textarea {
 .pop-up h6 {
     position: absolute;
     display: inline-block;
-    top: 80px;
+    top: 110px;
     transform: translate(-50%,-50%);
     padding: 4px;
     border-radius: 3px;

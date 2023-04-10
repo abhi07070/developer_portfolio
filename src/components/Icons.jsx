@@ -3,23 +3,33 @@ import { faInstagram, faTwitter, faFacebook, faGithub, faLinkedin } from '@forta
 export const Icons = [
     {
         icon: faInstagram,
-        BGcolor: "#e4405f"
+        name: "Instagram",
+        BGcolor: "#e4405f",
+        link: ""
     },
     {
         icon: faTwitter,
-        BGcolor: "#3b5999"
+        name: "Twitter",
+        BGcolor: "#3b5999",
+        link: ""
     },
     {
         icon: faFacebook,
-        BGcolor: "#1da1f2"
+        name: "Facebook",
+        BGcolor: "#1da1f2",
+        link: ""
     },
     {
         icon: faGithub,
-        BGcolor: "#222"
+        name: "Github",
+        BGcolor: "#222",
+        link: "",
     },
     {
         icon: faLinkedin,
-        BGcolor: "#1da1f2"
+        name: "Linkedin",
+        BGcolor: "#1da1f2",
+        link: ""
     },
 ];
 

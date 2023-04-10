@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faTwitter, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Header.css';
+import { Icons } from '../../components/Icons';
 
 const Header = () => {
 
@@ -19,24 +19,26 @@ const Header = () => {
         }
     }, [])
 
-
-    const iconNames = [faInstagram, faFacebook, faTwitter, faGithub, faLinkedin];
     return (
-        <header>
+        <header className='color'>
             <nav className={isOpen ? 'mobile' : 'nav-header'}>
                 <div className="logo">
                     <h2>Davinder Kumar</h2>
                 </div>
                 <div className="links">
                     {!isOpen ? (
-                        iconNames.map((name) => (
-                            <FontAwesomeIcon className="link" icon={name} key={name} />
+                        Icons.map((name) => (
+                            <a className="link" href={name.link} key={name}>
+                                <FontAwesomeIcon icon={name.icon} />
+                            </a>
                         ))
                     ) : (
-                        iconNames.map((name) => (
+                        Icons.map((name) => (
                             <div className="link-name" key={name}>
-                                <FontAwesomeIcon className="link" icon={name} />
-                                {name.iconName}
+                                <a href={name.link}>
+                                    <FontAwesomeIcon className="link" icon={name.icon} />
+                                    {name.name}
+                                </a>
                             </div>
                         ))
                     )}

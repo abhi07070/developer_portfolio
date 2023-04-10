@@ -13,7 +13,12 @@
 
 body {
   color: #525f7f;
-  /* background-color: black; */
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: var(--black);
 }
 
 :root {
